@@ -1,0 +1,2 @@
+C:\work\myrecon\Automation\AutomationSorting\AutomationSorting\bin\Debug\AutomationSorting.exe.config
+C:\work\myrecon\Automation\AutomationSorting\AutomationSorting\obj\Debug\AutomationSorting.csprojResolveAssemblyReference.cache
