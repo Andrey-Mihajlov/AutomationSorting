@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AutomationSorting.ConveyorProcessing;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,7 @@ namespace AutomationSorting
 {
     public partial class AutomationSortingService : ServiceBase
     {
+        public Conveyor _conveyor = null;
         public AutomationSortingService()
         {
             InitializeComponent();

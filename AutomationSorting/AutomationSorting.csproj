@@ -52,6 +52,7 @@
       <HintPath>..\packages\System.Data.SQLite.Core.1.0.102.0\lib\net451\System.Data.SQLite.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -68,10 +69,32 @@
     <Compile Include="AutomationSortingService.Designer.cs">
       <DependentUpon>AutomationSortingService.cs</DependentUpon>
     </Compile>
-    <Compile Include="Conveyor\ScanAndPrintProcessor.cs" />
-    <Compile Include="Conveyor\ScannedBarcodeStatus.cs" />
+    <Compile Include="ConveyorProcessing\Events\NewBarcodeEvent.cs" />
+    <Compile Include="ConveyorProcessing\Events\NewUnitEventArgs.cs" />
+    <Compile Include="ConveyorProcessing\Events\SortingCompletedEventArgs.cs" />
+    <Compile Include="ConveyorProcessing\Processors\CheckinProcessor.cs" />
+    <Compile Include="ConveyorProcessing\Conveyor.cs" />
+    <Compile Include="ConveyorProcessing\HardwareController.cs" />
+    <Compile Include="ConveyorProcessing\Processors\LoggingProcessor.cs" />
+    <Compile Include="ConveyorProcessing\Processors\PrintProcessor.cs" />
+    <Compile Include="ConveyorProcessing\ProcessingError.cs" />
+    <Compile Include="ConveyorProcessing\ProcessingErrorCodeEnum.cs" />
+    <Compile Include="ConveyorProcessing\ProcessingUnit.cs" />
+    <Compile Include="ConveyorProcessing\Processors\ScanProcessor.cs" />
+    <Compile Include="ConveyorProcessing\ScannedBarcodeStatus.cs" />
+    <Compile Include="ConveyorProcessing\Processors\SortingProcessor.cs" />
+    <Compile Include="Data\Abstract\IProductRepository.cs" />
+    <Compile Include="Data\Abstract\ISlpRepository.cs" />
+    <Compile Include="Data\Abstract\IUpcRepository.cs" />
+    <Compile Include="Data\RepositoryFactory.cs" />
+    <Compile Include="Model\ProductDataModel.cs" />
+    <Compile Include="Model\SLPDataModel.cs" />
+    <Compile Include="Model\UPCDataModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\ConveyorHelper.cs" />
+    <Compile Include="Utility\SLPHelper.cs" />
+    <Compile Include="Utility\UPCHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
