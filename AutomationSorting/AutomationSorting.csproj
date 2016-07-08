@@ -87,6 +87,7 @@
     <Compile Include="Data\Abstract\ISlpRepository.cs" />
     <Compile Include="Data\Abstract\IUpcRepository.cs" />
     <Compile Include="Data\RepositoryFactory.cs" />
+    <Compile Include="Data\UpcRepository.cs" />
     <Compile Include="Model\ProductDataModel.cs" />
     <Compile Include="Model\SLPDataModel.cs" />
     <Compile Include="Model\UPCDataModel.cs" />

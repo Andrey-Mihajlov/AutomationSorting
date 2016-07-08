@@ -22,7 +22,7 @@ namespace AutomationSorting.ConveyorProcessing
         public static HardwareController GetInstance()
         {
             if (_hardwareController == null)
-                _hardwareController = HardwareController.GetInstance();
+                _hardwareController = new HardwareController();
 
             return _hardwareController;
         }

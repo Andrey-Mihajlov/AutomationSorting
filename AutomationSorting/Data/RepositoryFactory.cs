@@ -11,17 +11,17 @@ namespace AutomationSorting.Data
     {
         public static IUpcRepository GetUpcRepository()
         {
-            throw new NotImplementedException();
+            return new LocalDBSortingRepository();
         }
 
         public static ISlpRepository GetSlpRepository()
         {
-            throw new NotImplementedException();
+            return new LocalDBSortingRepository();
         }
 
         public static IProductRepository GetProductRepository()
         {
-            throw new NotImplementedException();
+            return new LocalDBSortingRepository();
         }
     }
 }
